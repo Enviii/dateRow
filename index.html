@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>dateRow</title>
+
+        <meta name="dateRow home page" content="Created using Jquery/Bootstrap">
+        <meta name="Darshan Karkar">
+        <style>
+            body{padding-top: 20px;}
+            h1{padding: 0 0 20px 0;}
+            #form{padding-top: 20px;}
+            .nolist ul {list-style: none;}
+            .nolist li {display: inline; padding: 0 1px 0 1px;}
+        </style>
+
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="dateRow.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="text-center">
+                Created by Darshan Karkar
+            </h1>
+            <div class="row">
+                <div class="btn-group col-lg-offset-2 col-lg-10" data-toggle="buttons">
+                    <ul class="nolist" id="monthRow">
+                        <li class="nolist"><button class="btn btn-default" id="month1" onclick="redoMonth(0)">Jan</button></li>
+                        <li class="nolist"><button class="btn btn-default" id="month2" onclick="redoMonth(1)">Feb</button></li>
+                        <li class="nolist"><button class="btn btn-default" id="month3" onclick="redoMonth(2)">Mar</button></li>
+                        <li class="nolist"><button class="btn btn-default" id="month4" onclick="redoMonth(3)">Apr</button></li>
+                        <li class="nolist"><button class="btn btn-default" id="month5" onclick="redoMonth(4)">May</button></li>
+                        <li class="nolist"><button class="btn btn-default" id="month5" onclick="redoMonth(5)">Jun</button></li>
+                        <li class="nolist"><button class="btn btn-default" id="month7" onclick="redoMonth(6)">Jul</button></li>
+                        <li class="nolist"><button class="btn btn-default" id="month8" onclick="redoMonth(7)">Aug</button></li>
+                        <li class="nolist"><button class="btn btn-default" id="month9" onclick="redoMonth(8)">Sep</button></li>
+                        <li class="nolist"><button class="btn btn-default" id="month10" onclick="redoMonth(9)">Oct</button></li>
+                        <li class="nolist"><button class="btn btn-default" id="month11" onclick="redoMonth(10)">Nov</button></li>
+                        <li class="nolist"><button class="btn btn-default" id="month12" onclick="redoMonth(11)">Dec</button></li>
+                    </ul>
+                </div>
+                
+                <br>
+                
+                <div class="btn-group" data-toggle="buttons"><ul class='nolist' id="dateRow"></ul></div>
+
+                <div class="col-lg-offset-3 col-lg-4" id="form">
+                    <fieldset>
+                        <legend>Date-row</legend>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label" for="inputDate">Date</label>
+                            <div class="input-group col-lg-4">
+                                <input class="form-control" id="inputDate" type="date">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <script src="/js/vendor/bootstrap.min.js"></script>
+    </body>
+</html>
